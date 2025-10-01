@@ -1,4 +1,5 @@
 terraform {
+  
    /*cloud {
     organization = "policy-as-code-training"
     workspaces {

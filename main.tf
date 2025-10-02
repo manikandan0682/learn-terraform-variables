@@ -1,12 +1,13 @@
 terraform {
-  
-/* cloud {
+
+ cloud {
     organization = "policy-as-code-training"
     workspaces {
       name = "policy-dev-Mani"
+      project = "policy-as-code"
     }
   }
-  */
+  
 
   required_providers {
     aws = {
@@ -40,7 +41,7 @@ module "vpc" {
 
   tags = {
     project     = "project-alpha",
-    environment = "development1"
+    environment = "development"
   }
 }
 
@@ -56,7 +57,7 @@ module "app_security_group" {
 
   tags = {
     project     = "project-alpha",
-    environment = "development1"
+    environment = "development"
   }
 }
 
@@ -72,7 +73,7 @@ module "lb_security_group" {
 
   tags = {
     project     = "project-alpha",
-    environment = "development1"
+    environment = "development"
   }
 }
 
@@ -113,7 +114,7 @@ module "elb_http" {
 
   tags = {
     project     = "project-alpha",
-    environment = "development1"
+    environment = "development"
   }
 }
 
@@ -127,6 +128,6 @@ module "ec2_instances" {
 
   tags = {
     project     = "project-alpha",
-    environment = "development1"
+    environment = "development"
   }
 }

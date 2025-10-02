@@ -1,10 +1,12 @@
 terraform {
+  
 /* cloud {
     organization = "policy-as-code-training"
     workspaces {
       name = "policy-dev-Mani"
     }
-  }*/
+  }
+  */
 
   required_providers {
     aws = {

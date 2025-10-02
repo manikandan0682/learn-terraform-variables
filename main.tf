@@ -1,6 +1,5 @@
 terraform {
-  
-   /*cloud {
+/* cloud {
     organization = "policy-as-code-training"
     workspaces {
       name = "policy-dev-Mani"

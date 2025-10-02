@@ -140,3 +140,9 @@ module "ec2_instances" {
     environment = "development"
   }
 }
+
+resource "aws_ebs_volume" "unencrypted" {
+  availability_zone = "us-west-1a"
+  size              = 8
+  encrypted         = false # Intentional violation: unencrypted EBS volume
+}
